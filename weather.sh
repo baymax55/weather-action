@@ -13,11 +13,7 @@ curl \
   -o result.html \
   wttr.in/$CITY?format=4\&$UNIT
 
-cmd="
-  curl \
-  -H "Accept-Language: $LANGUAGE" \
-  -H "User-Agent: $UA" \
-  wttr.in/西安?format=3"
+cmd="curl wttr.in/西安?format=3"
 result=`$cmd`
 echo ${#result}
 var=$($cmd|tr -cd "[0-9]")
