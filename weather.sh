@@ -14,11 +14,8 @@ curl \
   wttr.in/$CITY?format=3\&$UNIT
 
 pwd
-cmd=`cat result.html`
-result=`$cmd`
-echo ${#result}
-var=$($cmd|tr -cd "[0-9]")
-var="西安天气:"$var"度"
+cmd=$(cat result.html |tr -cd "[0-9]")
+var="西安天气:"$cmd"度"
 cms="curl https://sc.ftqq.com/SCU74130T5810c8803a0fde3ad8e07301a58a26ff5e096d2e5c44a.send?text=$var"
 result=`$cms`
 
