@@ -22,7 +22,7 @@ jobs:
           server_port: 465
           username: 18161931993@163.com
           password: KEVTAZLMOAAUWYYY
-          subject: hXi'an Weather Report (${{env.REPORT_DATE}})
+          subject: Xi'an Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
           to: 1348580915@qq.com
           from: GitHub Actions
