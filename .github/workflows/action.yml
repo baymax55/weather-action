@@ -18,10 +18,10 @@ jobs:
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@master
         with:
-          server_address: smtp.163.com
+          server_address: smtp.tom.com
           server_port: 465
-          username: 18161931993@163.com
-          password: 18161931993
+          username: baymax56@tom.com
+          password: baymax56
           subject: hXi'an Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
           to: xingbai56@gmail.com
