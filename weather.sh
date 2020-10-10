@@ -12,7 +12,17 @@ curl \
   -H "User-Agent: $UA" \
   -o result.html \
   wttr.in/$CITY?format=4\&$UNIT
-curl \
-https://sc.ftqq.com/SCU74130T5810c8803a0fde3ad8e07301a58a26ff5e096d2e5c44a.send?text=主人服务器又挂掉啦~
+
+cmd="
+  curl \
+  -H "Accept-Language: $LANGUAGE" \
+  -H "User-Agent: $UA" \
+  wttr.in/西安?format=3"
+result=`$cmd`
+echo ${#result}
+var=$($cmd|tr -cd "[0-9]")
+var="西安天气:"$var"度"
+cms="curl https://sc.ftqq.com/SCU74130T5810c8803a0fde3ad8e07301a58a26ff5e096d2e5c44a.send?text=$var"
+result=`$cms`
 
 
