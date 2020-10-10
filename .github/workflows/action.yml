@@ -24,6 +24,6 @@ jobs:
           password: KEVTAZLMOAAUWYYY
           subject: hXi'an Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
-          to: xingbai56@gmail.com
+          to: 1348580915@qq.com
           from: GitHub Actions
           content_type: text/html
