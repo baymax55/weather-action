@@ -12,3 +12,7 @@ curl \
   -H "User-Agent: $UA" \
   -o result.html \
   wttr.in/$CITY?format=4\&$UNIT
+curl \
+https://sc.ftqq.com/SCU74130T5810c8803a0fde3ad8e07301a58a26ff5e096d2e5c44a.send?text=主人服务器又挂掉啦~
+
+
